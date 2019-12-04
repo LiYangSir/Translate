@@ -46,6 +46,8 @@ class App(QMainWindow, Ui_MainWindow):
 
     def copy_text(self):
         clipboard = QApplication.clipboard()
+        print('Hello')
+        self.translate('Heelo')
         clipboard.setText(self.translate_out.toPlainText())
 
 
