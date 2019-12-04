@@ -30,7 +30,6 @@ class App(QMainWindow, Ui_MainWindow):
 
     def translateText(self):
         text = self.translate_in.toPlainText()
-        # print(text + "==")
         if text != '':
             self.data['i'] = text
             data = urllib.parse.urlencode(self.data).encode('utf-8')
