@@ -45,7 +45,7 @@ class App(QMainWindow, Ui_MainWindow):
 
     def copy_text(self):
         clipboard = QApplication.clipboard()  # 剪切板
-        clipboard.setText(self.translate_out.toPlainText())
+        clipboard.setText(self.translate_out.toPlainText())  # time
 
 
 if __name__ == '__main__':
